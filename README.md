@@ -1,0 +1,1 @@
+EduRight is a non-profit organization committed to providing quality education to children around the world. Our mission is to ensure that every child, regardless of their economic circumstances, has access to a good education.
