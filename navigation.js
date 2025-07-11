@@ -53,9 +53,13 @@ function navigation() {
 //   document.getElementById("skills").scrollIntoView();
 // }
 
-function program() {
-  alert("Will upadate soon!!");
-}
+document.querySelectorAll(".attendBtn").forEach((button) => {
+  button.addEventListener("click", function () {
+    document
+      .getElementById("contactFormSection")
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
 
 function aboutus() {
   navigation();
