@@ -3,220 +3,388 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://kit.fontawesome.com/6fc957396b.css" crossorigin="anonymous" />
-    <link href="./events.css" rel="stylesheet" />
-    <link href="../../css/homepge.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
     <title>Events - Eduright</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="./events.css" rel="stylesheet" />
 </head>
 
 <body>
-    <nav>
-        <a href="../../">
-            <h1 type="button" class="txt1">
-                EduRight <i class="fa-solid fa-book icon"></i>
-                <i class="fa-solid fa-earth-asia icon"></i>
-            </h1>
-        </a>
-        <ul>
-            <li>
-                <a href="../courses/" class="txt">Courses <i class="fa-regular fa-bookmark"></i></a>
-            </li>
-            <li>
-                <a href="../events/" class="txt">Programs <i class="fa-regular fa-calendar-check"></i></a>
-            </li>
-            <li>
-                <a href="../../#aboutus" class="txt">About <i class="fa-regular fa-user"></i></a>
-            </li>
-            <li>
-                <a href="../donatesus/" target="_blank" class="txt">
-                    Donate <i class="fa-solid fa-hand-holding-medical"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://forms.gle/9xYuwA1K4pSM8oE7A" target="_blank" class="txt">
-                    Contact Us <i class="fa-regular fa-address-card"></i>
-                </a>
-            </li>
+
+    <nav class="navbar">
+        <a href="../../" class="navbar__brand">EduRight</a>
+        <ul class="navbar__links">
+            <li><a href="../courses/">Courses</a></li>
+            <li><a href="../events/">Programs</a></li>
+            <li><a href="../../#aboutus">About</a></li>
+            <li><a href="../donatesus/" target="_blank">Donate</a></li>
+            <li><a href="https://forms.gle/9xYuwA1K4pSM8oE7A" class="navbar__cta">Contact Us</a></li>
         </ul>
-
-        <div class="menutoggle" onclick="tooglemenu();"></div>
-        <div class="navigation-style-1"></div>
-        <div class="navigation-style-2"></div>
-        <div class="navigation-style-3"></div>
-        <div class="navigation">
-            <ul>
-                <li><input type="button" value="Home" onclick="courses();" /></li>
-                <li>
-                    <input type="button" value="Courses" onclick="courses();" />
-                </li>
-                <li>
-                    <input type="button" value="Programs" onclick="programs();" />
-                </li>
-                <li><input type="button" value="About" onclick="aboutus();" /></li>
-            </ul>
-        </div>
     </nav>
-    <div class="mainSec">
-        <h1 class="middle">Events</h1>
-        <div class="bottomCard">
-            <div class="eventCard">
-                <img src="../../assets/jee.jpg" class="cardImg" />
-                <div>
-                    <h3>
-                        JEE Free Session
-                    </h3>
-                </div>
-                <div class="cardBtm">
-                    <div class="btmLeft">
-                        <b>
-                            Time:
-                        </b><br />
-                        10:00 AM IST
-                    </div>
-                    <div class="btmRight">
-                        <b>
-                            Address:
-                        </b><br />
-                        Nerul, Navi Mumbai, India
-                    </div>
-                </div>
-                <div class="btmSec">
-                    <button class="attendBtn">Attend</button>
-                </div>
-            </div>
-            <div class="eventCard">
-                <img src="../../assets/GATE.jpg" class="cardImg" />
 
-                <div>
-                    <h3>
-                        Gate Entrance Session
-                    </h3>
-                </div>
-                <div class="cardBtm">
-                    <div class="btmLeft">
-                        <b>
-                            Time:
-                        </b><br />
-                        10:00 AM IST
-                    </div>
-                    <div class="btmRight">
-                        <b>
-                            Address:
-                        </b><br />
-                        Andheri, Mumbai, India
-                    </div>
-                </div>
-                <div class="btmSec">
-                    <button class="attendBtn">Attend</button>
-                </div>
-            </div>
-            <div class="eventCard">
-                <img src="../../assets/career-counselling.jpg" class="cardImg" />
+    <main class="page-wrapper">
 
-                <div>
-                    <h3>
-                        Career counselling
-                    </h3>
-                </div>
-                <div class="cardBtm">
-                    <div class="btmLeft">
-                        <b>
-                            Time:
-                        </b><br />
-                        10:00 AM IST
-                    </div>
-                    <div class="btmRight">
-                        <b>
-                            Address:
-                        </b><br />
-                        Mira Road, Dhaisar, India
-                    </div>
-                </div>
-                <div class="btmSec">
-                    <button class="attendBtn">Attend</button>
-                </div>
+        <header class="page-header">
+            <h1 class="page-title">Upcoming Events</h1>
+            <p class="page-subtitle">Join our expert-led sessions to guide your academic and professional journey.</p>
+        </header>
+
+        <section class="event-controls">
+            <div class="filter-group">
+                <label for="event-type-filter" class="filter-label">Filter by Type:</label>
+                <select id="event-type-filter" class="filter-select">
+                    <option value="all">All Types</option>
+                    <option value="JEE">JEE</option>
+                    <option value="GATE">GATE</option>
+                    <option value="Counselling">Counselling</option>
+                    <option value="Workshop">Workshop</option>
+                </select>
             </div>
-        </div>
+            <div class="filter-group">
+                <label for="event-location-filter" class="filter-label">Filter by Location:</label>
+                <select id="event-location-filter" class="filter-select">
+                    <option value="all">All Locations</option>
+                    <option value="Nerul">Nerul</option>
+                    <option value="Andheri">Andheri</option>
+                    <option value="Mira Road">Mira Road</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="event-sort" class="filter-label">Sort by:</label>
+                <select id="event-sort" class="filter-select">
+                    <option value="default">Default</option>
+                    <option value="soonest">Soonest</option>
+                    <option value="alphabetical">Alphabetical (A-Z)</option>
+                </select>
+            </div>
+        </section>
+
+
+        <section class="events-grid">
+
+            <article class="event-card" data-event-type="JEE" data-event-location="Nerul" data-event-date="2025-08-01">
+                <img src="../../assets/jee.jpg" alt="Students in a classroom" class="event-card__image" />
+                <div class="event-card__content">
+                    <h3 class="event-card__title">JEE Free Session</h3>
+                    <div class="event-card__details">
+                        <p><i class="fa-regular fa-clock"></i> 10:00 AM IST</p>
+                        <p><i class="fa-solid fa-calendar-alt"></i> August 1, 2025</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Nerul, Navi Mumbai</p>
+                    </div>
+                    <button class="event-card__button" data-event-id="jee-session">Learn More & Register</button>
+                </div>
+            </article>
+
+            <article class="event-card" data-event-type="GATE" data-event-location="Andheri"
+                data-event-date="2025-08-15">
+                <img src="../../assets/GATE.jpg" alt="A university building" class="event-card__image" />
+                <div class="event-card__content">
+                    <h3 class="event-card__title">GATE Entrance Session</h3>
+                    <div class="event-card__details">
+                        <p><i class="fa-regular fa-clock"></i> 10:00 AM IST</p>
+                        <p><i class="fa-solid fa-calendar-alt"></i> August 15, 2025</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Andheri, Mumbai</p>
+                    </div>
+                    <button class="event-card__button" data-event-id="gate-session">Learn More & Register</button>
+                </div>
+            </article>
+            <article class="event-card" data-event-type="GATE" data-event-location="Andheri"
+                data-event-date="2025-08-15">
+                <img src="../../assets/GATE.jpg" alt="A university building" class="event-card__image" />
+                <div class="event-card__content">
+                    <h3 class="event-card__title">GATE Exam Session</h3>
+                    <div class="event-card__details">
+                        <p><i class="fa-regular fa-clock"></i> 11:00 AM IST</p>
+                        <p><i class="fa-solid fa-calendar-alt"></i> August 15, 2025</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Andheri, Mumbai</p>
+                    </div>
+                    <button class="event-card__button" data-event-id="gate-session">Learn More & Register</button>
+                </div>
+            </article>
+            <article class="event-card" data-event-type="GATE" data-event-location="Andheri"
+                data-event-date="2025-08-15">
+                <img src="../../assets/GATE.jpg" alt="A university building" class="event-card__image" />
+                <div class="event-card__content">
+                    <h3 class="event-card__title">GATE Pre-Exam Session</h3>
+                    <div class="event-card__details">
+                        <p><i class="fa-regular fa-clock"></i> 12:00 AM IST</p>
+                        <p><i class="fa-solid fa-calendar-alt"></i> August 15, 2025</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Andheri, Mumbai</p>
+                    </div>
+                    <button class="event-card__button" data-event-id="gate-session">Learn More & Register</button>
+                </div>
+            </article>
+
+            <article class="event-card" data-event-type="Counselling" data-event-location="Mira Road"
+                data-event-date="2025-09-05">
+                <img src="../../assets/career-counselling.jpg" alt="A person giving career advice"
+                    class="event-card__image" />
+                <div class="event-card__content">
+                    <h3 class="event-card__title">Career Counselling</h3>
+                    <div class="event-card__details">
+                        <p><i class="fa-regular fa-clock"></i> 10:00 AM IST</p>
+                        <p><i class="fa-solid fa-calendar-alt"></i> September 5, 2025</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Mira Road, Dahisar</p>
+                    </div>
+                    <button class="event-card__button" data-event-id="career-counselling">Learn More & Register</button>
+                </div>
+            </article>
+
+            <article class="event-card" data-event-type="Workshop" data-event-location="Nerul"
+                data-event-date="2025-09-20">
+                <img src="../../assets/writing-notes-idea-conference.jpg" alt="Person writing notes"
+                    class="event-card__image" />
+                <div class="event-card__content">
+                    <h3 class="event-card__title">Academic Writing Workshop</h3>
+                    <div class="event-card__details">
+                        <p><i class="fa-regular fa-clock"></i> 02:00 PM IST</p>
+                        <p><i class="fa-solid fa-calendar-alt"></i> September 20, 2025</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Nerul, Navi Mumbai</p>
+                    </div>
+                    <button class="event-card__button" data-event-id="writing-workshop">Learn More & Register</button>
+                </div>
+            </article>
+
+        </section>
+
         <section class="contact-section" id="contactFormSection">
-            <div class="contact-intro">
-                <h2 class="contact-title">Get in Touch</h2>
-                <p class="contact-description">
-                    Fill out the form below and we'll get back to you as soon as possible.
+            <div class="contact-header">
+                <h2 class="contact-title">Register for an Event</h2>
+                <p class="contact-subtitle">Fill out the form below to secure your spot. We'll get back to you shortly.
                 </p>
             </div>
 
             <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-
                 <input type="hidden" name="access_key" value="662dac9b-37e2-4c26-baf1-18274e9ccc73" />
-                <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-                <input type="hidden" name="from_name" value="My Website" />
+                <input type="hidden" name="subject" value="New Event Registration from EduRight" />
 
-                <div class="form-group-container">
+                <div class="form-grid">
                     <div class="form-group">
-                        <label for="name" class="form-label">Name</label>
-                        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+                        <label for="name" class="form-label">Full Name</label>
+                        <input id="name" name="name" class="form-input" placeholder="e.g., Jane Doe" type="text"
+                            required />
                     </div>
                     <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
-                        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+                        <label for="email" class="form-label">Email Address</label>
+                        <input id="email" name="email" class="form-input" placeholder="e.g., jane.doe@example.com"
+                            type="email" required />
                     </div>
                     <div class="form-group">
-                        <label for="phone" class="form-label">Phone</label>
-                        <input id="phone" name="phone" class="form-input" placeholder="Your Phone No." type="text" />
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input id="phone" name="phone" class="form-input" placeholder="Optional" type="text" />
                     </div>
                     <div class="form-group">
-                        <label for="Which-Event" class="form-label">Event Name</label>
-                        <input id="Which-Event" name="Which-Event" class="form-input" placeholder="Event Name"
-                            type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-textarea" id="message" name="message"
-                            placeholder="Your message"></textarea>
+                        <label for="event-name" class="form-label">Event Name</label>
+                        <input id="event-name" name="event_name" class="form-input" placeholder="e.g., JEE Free Session"
+                            type="text" required />
                     </div>
                 </div>
-                <button class="form-submit" type="submit">Send Message</button>
+                <div class="form-group form-group--full-width">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-textarea" id="message" name="message"
+                        placeholder="Any questions or comments?"></textarea>
+                </div>
+                <button class="form-submit" type="submit">Submit Registration</button>
             </form>
-
-            <script>
-                const contactForm = document.querySelector(".contact-form");
-
-                contactForm.addEventListener("submit", async function (e) {
-                    e.preventDefault(); // prevent default submit for custom handling
-
-                    const formData = new FormData(contactForm);
-
-                    try {
-                        const response = await fetch(contactForm.action, {
-                            method: contactForm.method,
-                            body: formData
-                        });
-
-                        if (response.ok) {
-                            alert("Form submitted successfully!");
-                            contactForm.reset(); // ✅ Reset the form
-                        } else {
-                            alert("There was an error submitting the form.");
-                        }
-                    } catch (error) {
-                        alert("Something went wrong. Please try again.");
-                    }
-                });
-            </script>
-
         </section>
+
+    </main>
+
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="../../assets/career-counselling.jpg" alt="Event Image" class="modal-image" />
+            <h2 id="modal-title" class="modal-title"></h2>
+            <div class="modal-details">
+                <p><i class="fa-regular fa-clock"></i> <span id="modal-time"></span>11:00AM</p>
+                <p><i class="fa-solid fa-calendar-alt"></i> <span id="modal-date"></span>15/12/2025</p>
+                <p><i class="fa-solid fa-location-dot"></i> <span id="modal-location"></span>Malad East</p>
+            </div>
+            <p id="modal-description" class="modal-description"></p>
+            <p id="modal-speakers" class="modal-speakers"></p>
+            <a href="#contactFormSection" class="modal-register-button">Register for this Event</a>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="../../navigation.js"></script>
-    <script src="https://kit.fontawesome.com/6fc957396b.js" crossorigin="anonymous"></script>
+
+    <script>
+        const eventsData = [
+            {
+                id: 'jee-session',
+                title: 'JEE Free Session',
+                image: '../../assets/jee.jpg',
+                time: '10:00 AM IST',
+                date: 'August 1, 2025',
+                location: 'Nerul, Navi Mumbai',
+                description: 'Join our free introductory session for JEE aspirants. Learn about the exam pattern, key topics, and effective preparation strategies from our expert faculty. This session is designed to give you a head start in your JEE journey.',
+                speakers: 'Featuring: Dr. R.K. Sharma (Physics Expert), Ms. S. Agarwal (Chemistry Mentor)'
+            },
+            {
+                id: 'gate-session',
+                title: 'GATE Entrance Session',
+                image: '../../assets/GATE.jpg',
+                time: '10:00 AM IST',
+                date: 'August 15, 2025',
+                location: 'Andheri, Mumbai',
+                description: 'A comprehensive session for GATE aspirants across various engineering disciplines. Understand the syllabus, marking scheme, and how to approach the exam. Get insights into higher education opportunities and PSU careers.',
+                speakers: 'Featuring: Prof. A. Kumar (Engineering Faculty, IIT Alumni)'
+            },
+            {
+                id: 'career-counselling',
+                title: 'Career Counselling',
+                image: '../../assets/career-counselling.jpg',
+                time: '10:00 AM IST',
+                date: 'September 5, 2025',
+                location: 'Mira Road, Dahisar',
+                description: 'Confused about your career path? Our expert counselors will guide you through various academic and professional options, helping you identify your strengths and passions to make informed decisions for your future.',
+                speakers: 'Featuring: Ms. P. Singh (Certified Career Counselor)'
+            },
+            {
+                id: 'writing-workshop',
+                title: 'Academic Writing Workshop',
+                image: '../../assets/writing-notes-idea-conference.jpg',
+                time: '02:00 PM IST',
+                date: 'September 20, 2025',
+                location: 'Nerul, Navi Mumbai',
+                description: 'Enhance your academic writing skills with this interactive workshop. Learn how to structure essays, write compelling research papers, and improve your overall communication for academic success. Suitable for college students and researchers.',
+                speakers: 'Featuring: Dr. L. Desai (Language & Communication Specialist)'
+            }
+        ];
+
+        const eventModal = document.getElementById('event-modal');
+        const closeModalButton = document.querySelector('.close-button');
+        const modalImage = document.getElementById('modal-image');
+        const modalTitle = document.getElementById('modal-title');
+        const modalTime = document.getElementById('modal-time');
+        const modalDate = document.getElementById('modal-date');
+        const modalLocation = document.getElementById('modal-location');
+        const modalDescription = document.getElementById('modal-description');
+        const modalSpeakers = document.getElementById('modal-speakers');
+        const modalRegisterButton = document.querySelector('.modal-register-button');
+        const eventCards = document.querySelectorAll('.event-card__button');
+
+        eventCards.forEach(button => {
+            button.addEventListener('click', function () {
+                const eventId = this.dataset.eventId;
+                const event = eventsData.find(e => e.id === eventId);
+
+                if (event) {
+                    modalImage.src = event.image;
+                    modalTitle.textContent = event.title;
+                    modalTime.textContent = event.time;
+                    modalDate.textContent = event.date;
+                    modalLocation.textContent = event.location;
+                    modalDescription.textContent = event.description;
+                    modalSpeakers.textContent = event.speakers;
+
+                    document.getElementById('event-name').value = event.title;
+
+                    eventModal.style.display = 'block';
+                    document.body.classList.add('no-scroll');
+                }
+            });
+        });
+
+        closeModalButton.addEventListener('click', function () {
+            eventModal.style.display = 'none';
+            document.body.classList.remove('no-scroll');
+        });
+
+        window.addEventListener('click', function (event) {
+            if (event.target == eventModal) {
+                eventModal.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        });
+
+        modalRegisterButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            eventModal.style.display = 'none';
+            document.body.classList.remove('no-scroll');
+            document.getElementById('contactFormSection').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+
+        const eventTypeFilter = document.getElementById('event-type-filter');
+        const eventLocationFilter = document.getElementById('event-location-filter');
+        const eventSort = document.getElementById('event-sort');
+        const eventsGrid = document.querySelector('.events-grid');
+        const initialEventOrder = Array.from(document.querySelectorAll('.event-card'));
+
+        function applyFiltersAndSort() {
+            let filteredEvents = Array.from(initialEventOrder);
+
+            const selectedType = eventTypeFilter.value;
+            const selectedLocation = eventLocationFilter.value;
+            const selectedSort = eventSort.value;
+
+            if (selectedType !== 'all') {
+                filteredEvents = filteredEvents.filter(card => card.dataset.eventType === selectedType);
+            }
+
+            if (selectedLocation !== 'all') {
+                filteredEvents = filteredEvents.filter(card => card.dataset.eventLocation === selectedLocation);
+            }
+
+            if (selectedSort === 'soonest') {
+                filteredEvents.sort((a, b) => {
+                    const dateA = new Date(a.dataset.eventDate);
+                    const dateB = new Date(b.dataset.eventDate);
+                    return dateA - dateB;
+                });
+            } else if (selectedSort === 'alphabetical') {
+                filteredEvents.sort((a, b) => {
+                    const titleA = a.querySelector('.event-card__title').textContent.toLowerCase();
+                    const titleB = b.querySelector('.event-card__title').textContent.toLowerCase();
+                    if (titleA < titleB) return -1;
+                    if (titleA > titleB) return 1;
+                    return 0;
+                });
+            } else if (selectedSort === 'default') {
+                filteredEvents = Array.from(initialEventOrder);
+            }
+
+            eventsGrid.innerHTML = '';
+            filteredEvents.forEach(card => eventsGrid.appendChild(card));
+        }
+
+        eventTypeFilter.addEventListener('change', applyFiltersAndSort);
+        eventLocationFilter.addEventListener('change', applyFiltersAndSort);
+        eventSort.addEventListener('change', applyFiltersAndSort);
+
+        const contactForm = document.querySelector(".contact-form");
+
+        contactForm.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: formData
+                });
+
+                if (response.ok) {
+                    alert("Form submitted successfully!");
+                    contactForm.reset();
+                } else {
+                    alert("There was an error submitting the form.");
+                }
+            } catch (error) {
+                alert("Something went wrong. Please try again.");
+            }
+        });
+    </script>
 </body>
 
 </html>
